@@ -57,6 +57,7 @@ class App{
             tmp[i][j]=0;
         } 
     }
+    // Создание поля
     createField(){
         let tmpField = [];
         for(let i=0;i<this.height;i++){
@@ -67,6 +68,7 @@ class App{
         }
         this.field = tmpField;
     }
+    // Проверка окружения элементов поля
     changeField(){
         let tmp = this.copyField();
         for(let i=0;i<this.height;i++){
@@ -110,6 +112,7 @@ class App{
         this.field = tmp;
         this.showLog();
     }
+    // Вывод лога
     showLog(){
         let tmp=[];
         for(let i=0;i<this.height;i++){
