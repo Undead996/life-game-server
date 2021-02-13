@@ -1,0 +1,14 @@
+{
+  "name": "life-game",
+  "version": "1.0.0",
+  "description": "test-task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start-data-from-json": "node index.js fieldData.json",
+    "create-json":"node createJSON.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
