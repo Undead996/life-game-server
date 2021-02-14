@@ -125,9 +125,11 @@ class App{
         if(!this.param){
             this.setSize(20, 40);
             this.createField();
-        }else{
+        }if(this.param=="fieldData.json"){
             this.setFs();
             this.setField();
+        }else{
+            console.log("Error:wrong data");
         }
         this.showLog();
         setInterval(this.changeField, 1000);
